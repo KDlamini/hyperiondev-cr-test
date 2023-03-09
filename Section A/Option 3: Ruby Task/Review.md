@@ -5,8 +5,10 @@
 <br>
 <br>
 
+# Review of Ruby Solution
+
 Excellent work so far! 👏🏾👏🏾👏🏾  
-You have done a great job creating an algorithm to determine whether an integer is a palindrome as per project requirements project requirements.🥳  
+You have done a great job creating an algorithm to determine whether an integer is a palindrome as per project requirements.🥳  
 There are a few issues that you still need to work on to improve your solution. You are almost there! 💪🏾 
 
 <br>
@@ -19,6 +21,8 @@ There are a few issues that you still need to work on to improve your solution. 
 ✔️  Great use of pseudo code to explain your solution. This makes it easy fo get an idea of your thought process while implementing your algorithm.  
 ✔️  Your code is clean, organized, and easy to read.
 
+Overall, this is an incomplete solution that does not solve the problem correctly or clearly. There are some major errors, inefficiencies, style issues, and documentation gaps that need to be fixed. I hope this feedback helps you improve your Ruby skills and coding practices. Please try again with a revised solution. 😊
+
 <br>
 
 <hr>
@@ -27,6 +31,15 @@ There are a few issues that you still need to work on to improve your solution. 
 <hr>
 
 ### Correctness
+
+- The solution is **incorrect** and does not pass the given test case. It has a logical error in `line 13: while num != x`. This condition will never be true because num is initialized to `x` in `line 12`. Therefore, the while loop will never execute and the reversed variable will always be 0. The correct condition should be: `while num != 0`.
+
+#### Typos
+> The solution also has a typo in `line 11: reversd = 0`. The variable `reversd` is misspelled. This is conflicting with how the variable is spelled `reversed` everywhere else on the algorithm.
+
+This results in a [NameError](https://www.thoughtco.com/nameerror-undefined-local-variable-2907927#:~:text=Why%20You're%20Getting%20This,intended%20to%20enter%20a%20string.) due to the undefined `reversed` variable that is used but not declared, and an `unused variable` warning due to `reversd` being declared but never used.
+
+<br>
 
 #### Syntax
 > When running tests on your solution I encounter the following [SyntaxError](https://en.wikipedia.org/wiki/Syntax_error).
@@ -43,16 +56,9 @@ SyntaxError:
 <br>
 
 #### Validation
-> The number input to reverse must not equal 0. Therefore, on `line 3` the `if` statement should use the `<=` operator.
+> The number input to reverse must not equal 0. Therefore, on `line 3: if x < 0` the `if` statement should use the `<=` operator.
 
 ![tests](assets/validate_zero_input.png)
-
-<br>
-
-#### Typos
-> On `line 11`, the variable `reversd` is misspelled. This is conflicting with how the variable is spelled `reversed` everywhere else on the algorithm.
-
-This results in a [NameError](https://www.thoughtco.com/nameerror-undefined-local-variable-2907927#:~:text=Why%20You're%20Getting%20This,intended%20to%20enter%20a%20string.) due to the undefined `reversed` variable that is used but not declared, and an `unused variable` warning due to `reversd` being declared but never used.
 
 <br>
 
@@ -69,7 +75,9 @@ This results in a [NameError](https://www.thoughtco.com/nameerror-undefined-loca
 ### Efficiency
 > I like your minimalist approach in reversing the the number in order to compare it with the input. However, the is a way you can improve the code between `line 11` and `line 19` in order to reduce [time complexity](https://www.mygreatlearning.com/blog/why-is-time-complexity-essential/#:~:text=Time%20complexity%20is%20defined%20as,of%20code%20in%20an%20algorithm.) and avoid runtime errors caused by infinite loops.
 
-There are several Ruby methods you case use to reverse the number in just one line of code. Kindly consider the following line of code:
+- The solution has a time complexity of O(log10(x)), where x is the input integer. This is because for each iteration of the while loop, we divide x by 10 and reduce its number of digits by one.
+
+There are several Ruby methods you can use to reverse the number in just one line of code and ultimately improving the time complexity and space complexity of the solution. Kindly consider the following line of code:
 
 ```
 reversed = x.to_s.split('').reverse().join('').to_i
@@ -85,9 +93,28 @@ Note: These are non-mutating methods which means that they do not change the ori
 
 <br>
 
-### Documentation
+### Style
 
+> Great work!!! 💯  
+> The solution follows some of the **Ruby style guide**, which is a set of conventions and best practices for writing Ruby code. It uses snake_case for variable names and spaces around operators and commas.
+
+- However, there are some **major improvements** that can be made to enhance readability and consistency:
+  - Use explicit return statements instead of relying on implicit returns (e.g., return false instead of false).
+  - Use consistent indentation 2 spaces instead of 4 spaces.
+  - Use single-line comments with # followed by a space (e.g., # Set variable num to ... instead of #set variable num to ...).
+
+<br>
+
+### Documentation
+#### Positives
 > Well done using comments to explain each line of code. This makes you code easy to follow. 💯 🎊 🥳
+
+#### Negatives
+> The solution does not include any documentation or test cases. This makes it hard to verify that the solution works as expected and to illustrate how it can be used.
+
+- There are some **essential steps** that can be taken to improve documentation:
+  - Add test cases with different inputs (e.g., positive numbers, negative numbers, zero) and expected outputs.
+  - Use puts or p statements to print output for test cases to verify the solution works.
 
 <br>
 
