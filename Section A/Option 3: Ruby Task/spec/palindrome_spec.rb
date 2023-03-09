@@ -25,7 +25,7 @@ describe "is_palindrome" do
         end
     end
 
-    context "given the number 0554550" do
+    context "given the number 35453" do
         it "returns true" do
           expect(is_palindrome(35453)).to eq(true)
         end
