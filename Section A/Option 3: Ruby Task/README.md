@@ -17,6 +17,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Run tests](#run-tests)
+    - [Linter Checks](#linter-checks)
   - [👥 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -51,44 +52,50 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+> In order to run this project you need:
 
 - Ruby [Any Version] installed on your local machine
 
 ### Setup
 
-Clone this repository to your desired folder:
+> Clone this repository to your desired folder:
 
 ```
   cd <your-folder>
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/KDlamini/hyperiondev-cr-test/tree/main
 ```
 
 ### Install
-
-Install this project with:
+> This is will install all the gems that are required to run this project.
 
 ```
   cd ./<your-folder>/hyperiondev-cr-test/Section A/Option 3: Ruby Task
   bundle install
 ```
-> This is will install all the gems that are required to run this project.
 
 ### Run tests
 
-To run tests, run the following command:
+> To run tests, run the following command:
 
 ```
   bundle exec rspec
 ```
 
+### Linter Checks
+
+> Track Ruby linter errors run:
+```
+rubocop
+```
+> To auto-correct correctable Rubocop offenses run:
+```
+rubocop --auto-correct-all | rubocop -A
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Simo Dlamini**
 
@@ -104,7 +111,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/KDlamini/hyperiondev-cr-test/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
