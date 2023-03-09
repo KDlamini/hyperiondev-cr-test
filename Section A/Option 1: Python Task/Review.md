@@ -57,7 +57,8 @@ Overall, this is a good solution that solves the problem correctly and efficient
 > The solution includes a test case with an example input and output. This helps to verify that the solution works as expected and to illustrate how it can be used. Well done!!!. 💯 🎊 🥳
 
 - However, there are some additional steps that can be taken to improve documentation:
-  - Add more test cases with different inputs (e.g., empty list, single string, duplicate strings) and expected outputs.
+  - Add more test cases with different inputs (e.g., empty list, single string, duplicate strings) and expected outputs  
+  OR write unit tests using assert statements or unittest module to automate testing and check for errors or edge cases.
   - Use docstrings or comments to explain what each test case does and why it is important.
 
 <br>

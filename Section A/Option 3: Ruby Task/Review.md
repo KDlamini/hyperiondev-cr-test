@@ -113,7 +113,7 @@ Note: These are non-mutating methods which means that they do not change the ori
 > The solution does not include any documentation or test cases. This makes it hard to verify that the solution works as expected and to illustrate how it can be used.
 
 - There are some **essential steps** that can be taken to improve documentation:
-  - Add test cases with different inputs (e.g., positive numbers, negative numbers, zero) and expected outputs.
+  - Add test cases with different inputs (e.g., positive numbers, negative numbers, zero) and expected outputs OR write unit tests using assert statements or minitest module.
   - Use puts or p statements to print output for test cases to verify the solution works.
 
 <br>
