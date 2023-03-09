@@ -29,7 +29,7 @@ There are a few issues that you still need to work on to improve your solution. 
 ### Correctness
 
 #### Syntax
-> When running tests on your solution I encounter the following `SyntaxError`.
+> When running tests on your solution I encounter the following [SyntaxError](https://en.wikipedia.org/wiki/Syntax_error).
 
 ```
 SyntaxError:
@@ -52,7 +52,7 @@ SyntaxError:
 #### Typos
 > On `line 11`, the variable `reversd` is misspelled. This is conflicting with how the variable is spelled `reversed` everywhere else on the algorithm.
 
-This results in an `Undefied variable` error due to `reversed` variable being undeclared, and an `Unused variable` warning due to `reversd` being declared but never used.
+This results in a [NameError](https://www.thoughtco.com/nameerror-undefined-local-variable-2907927#:~:text=Why%20You're%20Getting%20This,intended%20to%20enter%20a%20string.) due to the undefined `reversed` variable that is used but not declared, and an `unused variable` warning due to `reversd` being declared but never used.
 
 <br>
 
@@ -67,7 +67,7 @@ This results in an `Undefied variable` error due to `reversed` variable being un
 <br>
 
 ### Efficiency
-> I like your minimalist approach in reversing the the number in order to compare it with the input. However, the is a way you can improve the code between `line 11` and `line 19` in order to reduce `time complexity` and avoid runtime errors caused by infinite loops.
+> I like your minimalist approach in reversing the the number in order to compare it with the input. However, the is a way you can improve the code between `line 11` and `line 19` in order to reduce [time complexity](https://www.mygreatlearning.com/blog/why-is-time-complexity-essential/#:~:text=Time%20complexity%20is%20defined%20as,of%20code%20in%20an%20algorithm.) and avoid runtime errors caused by infinite loops.
 
 There are several Ruby methods you case use to reverse the number in just one line of code. Kindly consider the following line of code:
 
