@@ -5,7 +5,7 @@ import hammingChecker from './hammingChecker';
 describe("hammingChecker", () => {
   // Define test cases using test function and expect function
   test("uncorrupted block with length divisible by four", () => {
-    expect(hammingChecker("0111001011100100")).toBe("0010001011100100");
+    expect(hammingChecker("0010001011100100")).toBe("0010001011100100");
   });
 
   test("corrupted block with one flipped bit in position nine", () => {
@@ -21,7 +21,7 @@ describe("hammingChecker", () => {
   });
 
   test("uncorrupted block with length not divisible by four", () => {
-    expect(hammingChecker("10100101110010100")).toBe(
+    expect(hammingChecker("11100100110010100")).toBe(
       "11100100110010100"
     );
   });
