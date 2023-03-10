@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Section A: Code Review</b></h3>
+  <h3><b>Section C: Code Challenge</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -9,12 +9,13 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Python Task: Anagrams ](#-python-task-anagrams-)
+- [📖 JavaScript Challenge: The Hamming Checker ](#-javascript-challenge-the-hamming-checker-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Install](#install)
     - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
@@ -23,9 +24,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Python Task: Anagrams <a name="about-project"></a>
+# 📖 JavaScript Challenge: The Hamming Checker <a name="about-project"></a>
 
-**groupAnagrams** is an algorithm that groups the anagrams together from an array of strings strs.
+**The Hamming Checker** is an algorithm that takes a Hamming block and checks for corrupted bits. If the Hamming method finds no corrupted bits, return the same block as the input. If one corrupted bit is found, return the fixed code.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -34,7 +35,7 @@
 <details>
   <summary>Language</summary>
   <ul>
-    <li><a href="https://docs.python.org/3/">Python</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -52,9 +53,8 @@ To get a local copy up and running, follow these steps.
 
 > In order to run this project you need:
 
-- Python (Generally, Python comes pre-installed in Ubuntu)
-- VS code Editor is best since Python is built-in
-- install Python extension in VS code
+- NodeJS installed on your local machine
+- Code Editor (preferably VS Code)
 
 ### Setup
 
@@ -65,13 +65,21 @@ To get a local copy up and running, follow these steps.
   git clone https://github.com/KDlamini/hyperiondev-cr-test/tree/main
 ```
 
+### Install
+> This is will install all the dependencies that are required to run this project.
+
+```
+  cd ./<your-folder>/hyperiondev-cr-test/Section C
+  npm install
+```
+
 ### Run tests
 
-> To run tests, take the following steps:
+> To run tests, run the following command:
 
-- Open the Python test file `anagram_test.py` in the `Section A > Option 1: Python Task` directory.
-- The test beaker icon for the Test Explorer view will be displayed on the VS Code Activity bar or configure test in VS Code `ctrl+shift+P`> `Python: Configure Tests` > `Unittest` > `*_test.py`.
-- Use the test icon to run tests
+```
+  npm test
+```
 
 <!-- AUTHORS -->
 
