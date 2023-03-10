@@ -12,6 +12,7 @@
 - [📖 JavaScript Challenge: The Hamming Checker ](#-javascript-challenge-the-hamming-checker-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
+  - [Space Complexity Analysis ](#space-complexity-analysis-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -38,6 +39,12 @@
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 </details>
+
+<br>
+
+## Space Complexity Analysis <a name="space-complexity-analysis"></a>
+
+This is the solution's [space complexity analysis](./space_complexity_analysis.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
